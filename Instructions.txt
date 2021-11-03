@@ -1,0 +1,15 @@
+running server:
+1. open "backend" folder in your prefered IDE(tested on pycharm)
+2. open the terminal
+3. write $ pip install -r requirements.txt
+4. run main.py
+
+running unittesting:
+1. go to backend/Testing
+2. run input_string_check_test.py
+3. run non_empty_test.py
+
+running client:
+1.open cmd/IDE terminal inside /frontend
+2.write $ npm install
+3.after done installing write $ npm start

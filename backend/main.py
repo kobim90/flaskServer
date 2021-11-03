@@ -14,7 +14,7 @@ PORT = os.getenv('PORT')
 
 app = Flask(__name__)
 
-CORS(app, supports_credentials=True, resources={
+CORS(app, resources={
             r"/api/*": {"origins": "http://localhost:3000"}})
 app.config['CORS_HEADERS'] = 'Content-Type'
 
@@ -30,7 +30,6 @@ except Exception as e:
 
 @app.errorhandler(404)
 def page_not_found(e):
-    # note that we set the 404 status explicitly
     return {'message': "the page you are looking for is not found"}, 404
 
 
